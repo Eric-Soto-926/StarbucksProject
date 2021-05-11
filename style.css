@@ -23,13 +23,21 @@ body{
     grid-template: auto 1fr auto / 1fr;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    font-weight: 600;
+}
 
 .sb-header{
     grid-row: 1;
-    padding: 1rem;
-
 }
 .sb-main{
     grid-row: 2;
@@ -41,51 +49,52 @@ body{
     background-color: var(--starbucksCreamyWhite);
 }
 
-/* .sb-header__top-nav-bar{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.sb-header__left-container{
-    display: flex;
-    flex-direction: row;
-
-}
-.sb-header__top-nav-bar__list{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-}
-
-.sb-header__top-nav-bar__list-item{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.sb-header__top-nav-bar__list-item:hover{
-    color: var(--starbucksMidGreen);
-}
-
-.sb-header__top-right-options {
-    color: red;
-    display: flex;
-} */
 
 .sb-header__top-nav-bar{
     display: flex;
     width: 100%;
     max-width: 100%;
     align-items: center;
-    
-}
-
-.sb-header__top-nav-bar__item{
-    margin-left: 1rem;
+    gap: 2rem;
+    padding-top: 1rem;
     margin-right: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
 }
 
-.sb-header__top-nav-bar__item_flex-end{
+.sb-header__top-nav-bar__item:hover{
+    color: var(--starbucksMidGreen);
+}
+
+.testContainer{
     margin-left: auto;
+    display: flex;
+    width: max-content;
+    gap: 2.5rem;
+    margin-right: 4rem;
 }
 
+.blackBorderButton{
+    border: 2px solid black;
+    border-radius: 4rem;
+    padding: .6rem;
+    width: 6rem;
+}
+
+.blackBackgroundButton{
+    background-color: black;
+    color: white;
+}
+
+.sb-header__rewardsBar{
+    color: white;
+    background-color: var(--starbucksDarkGreen);
+    font-weight: 1000;
+    width: 100vw;
+    margin: 0;
+    padding: .8rem;
+}
+
+.sb-header__rewardsBar p{
+    margin-left: 5.4rem;
+}
